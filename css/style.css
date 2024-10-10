@@ -8,15 +8,23 @@
     flex-direction: column;
 }
 
-.tela-login {
+.elemento-centralizado {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 25rem;
     margin: 0;
     display: flex;
 }
 
+form.elemento-centralizado {
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 400px;
+    width: 100%;
+}
+
 h1 {
+    font-family: "Cabin", serif;
     font-size: 5rem;
     display: flex;
     justify-content: center;
@@ -31,6 +39,7 @@ h1.login {
 }
 
 h2 {
+    font-family: "Cabin", serif;
     font-size: 2rem;
     padding: 0.5rem;
 }
