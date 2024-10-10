@@ -103,3 +103,26 @@ input[type="submit"] {
 .espalhadoh {
     vertical-align: space-between;
 }
+
+.cinza  {
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(223, 223, 223);
+}
+
+.marginl {
+    margin-left: 2rem;
+}
+
+.borderr {
+    border-right: 0.2rem;
+    border-style: solid;
+}
+
+.margintop {
+    margin-top: 3rem;
+}
+
+.novohabito2 {
+    font-size: 3rem;
+}
