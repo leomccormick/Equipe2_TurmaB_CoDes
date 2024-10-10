@@ -11,7 +11,7 @@
 .tela-login {
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 25rem;
     margin: 0;
     display: flex;
 }
@@ -68,7 +68,7 @@ input {
 }
 
 .hcenter {
-    justify-items: center;
+    align-items: center;
 }
 
 body {
@@ -93,4 +93,8 @@ input[type="submit"] {
 
 .margin2 {
     margin: 2rem;
+}
+
+.espalhadoh {
+    vertical-align: space-between;
 }
