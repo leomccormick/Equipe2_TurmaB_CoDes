@@ -67,6 +67,11 @@ input {
     justify-content: center;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
 .hcenter {
     justify-items: center;
 }
