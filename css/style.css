@@ -16,6 +16,11 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 form.elemento-centralizado {
     flex-direction: column;
     flex-grow: 1;
@@ -60,7 +65,8 @@ footer {
     display: flex;
     width: 100%;
     position: fixed;
-    bottom: 0.5%;
+    bottom: 0%;
+    background-color: white;
 }
 
 .foter {
@@ -102,6 +108,18 @@ html {
 
 input[type="submit"] {
     cursor: pointer;
+}
+
+body.diario {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+main.diario {
+    flex-grow: 1;
+    padding-bottom: 4rem;
 }
 
 .novohabito {
@@ -149,6 +167,24 @@ input[type="submit"] {
 
 .icone-azul {
     filter: brightness(0) saturate(100%) invert(45%) sepia(89%) saturate(654%) hue-rotate(148deg) brightness(94%) contrast(101%);
+}
+
+a.azul {
+    background-color: transparent;
+    color: hsl(195, 100%, 70%);
+}
+
+.vermelho {
+    background-color: hsl(0, 100%, 70%);
+}
+
+h2.vermelho {
+    background-color: transparent;
+    color: hsl(0, 100%, 70%);
+}
+
+.icone-vermelho {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(96%) saturate(7481%) hue-rotate(-15deg) brightness(104%) contrast(103%);
 }
 
 input.botao-mais {
