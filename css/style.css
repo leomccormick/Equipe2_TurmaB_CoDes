@@ -31,7 +31,7 @@ h1 {
     padding: 0.5rem;
 }
 
-h1.login {
+h1.texto-fixo {
     position: absolute;
     top: 1rem;
     left: 50%;
@@ -113,7 +113,7 @@ input[type="submit"] {
     vertical-align: space-between;
 }
 
-.cinza  {
+.cinza {
     border: 1px;
     border-style: solid;
     background-color: rgb(223, 223, 223);
