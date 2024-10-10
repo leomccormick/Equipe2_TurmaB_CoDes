@@ -13,6 +13,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
+    display: flex;
 }
 
 h1 {
@@ -80,13 +81,4 @@ html {
 
 input[type="submit"] {
     cursor: pointer;
-}
-
-
-.tela-login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
