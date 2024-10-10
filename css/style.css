@@ -82,3 +82,11 @@ html {
 input[type="submit"] {
     cursor: pointer;
 }
+
+.novohabito {
+    font-size: 4rem;
+}
+
+.margin {
+    margin: 1rem;
+}
