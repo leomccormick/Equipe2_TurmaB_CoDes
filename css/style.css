@@ -44,6 +44,10 @@ h2 {
     padding: 0.5rem;
 }
 
+h3 label input {
+    font-family: "Source Serif 4", serif;
+}
+
 .itens {
     padding: 0.5rem 0.5rem 1rem 0.5rem;
     justify-content: space-between;
