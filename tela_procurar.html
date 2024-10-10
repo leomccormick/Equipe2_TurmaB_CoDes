@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="imagens/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <h1>Buscar</h1>
-    <form action="tela_vazia.html" class="coluna tela-login">
-        <ul class="linha margin">
-            <label class="hcenter" for="busca">Digite sua busca:</label>
-            <input type="search" id="busca" name="busca" placeholder="O que você procura?" required>
+<body class="elemento-centralizado">
+    <h1 class="texto-fixo">Buscar</h1>
+    <form action="tela_vazia.html" class="coluna hcenter">
+        <ul class="coluna margin">
+            <li>
+                <label class="hcenter" for="busca">Digite sua busca:</label>
+            </li>
+            <li>
+                <input type="search" id="busca" name="busca" placeholder="O que você procura?" required>
+            </li>
+            <li>
+                <input class="botao-confirmar" type="submit" value="Pesquisar">
+            </li>
         </ul>
-        <input class="margin" type="submit" value="Pesquisar">
     </form>
 
     <footer>
