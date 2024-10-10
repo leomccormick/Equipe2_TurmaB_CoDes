@@ -8,14 +8,28 @@
     flex-direction: column;
 }
 
-.titulo {
+.tela-login {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
     font-size: 5rem;
     display: flex;
     justify-content: center;
     padding: 0.5rem;
 }
 
-.subtitulo {
+h1.login {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
     font-size: 2rem;
     padding: 0.5rem;
 }
@@ -38,8 +52,13 @@ footer {
     width: 100%;
 }
 
-.padding {
+input {
     padding: 1rem;
+}
+
+.botao-confirmar {
+    border-radius: 5%;
+    margin-top: 0.5rem;
 }
 
 .center {
@@ -57,4 +76,17 @@ body {
 
 html {
     height: 100%;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+.tela-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
