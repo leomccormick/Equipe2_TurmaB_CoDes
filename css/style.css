@@ -191,3 +191,17 @@ input.botao-mais {
     font-size: 20px;
     padding: 10px 20px;
 }
+
+.htopbuscar {
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 3rem;
+}
+
+.margintop2 {
+    margin-top: 0.5rem;
+}
+
+.left {
+    justify-content: flex-start;
+}
