@@ -277,3 +277,12 @@ form.habito {
     width: 200px; 
     text-align: center; 
 }
+
+.linha-amigos {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px; 
+    padding-left: 1rem;
+}
+
