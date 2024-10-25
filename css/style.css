@@ -207,3 +207,7 @@ input.botao-mais {
 .left {
     justify-content: flex-start;
 }
+
+.espalhar {
+    justify-content: space-between;
+}
