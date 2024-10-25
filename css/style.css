@@ -246,3 +246,16 @@ form.habito {
     border-radius: 10px;
     border: 1px solid black;
 }
+
+.seuperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto; 
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black
+}
