@@ -78,6 +78,11 @@ footer {
 
 input {
     padding: 1rem;
+    font-size: 1.5rem;
+}
+
+input.input-habito {
+    border: none;
 }
 
 .margin-cheia {
@@ -229,11 +234,16 @@ input::placeholder {
     padding: 1rem;
 }
 
-input{
-    font-size: 1.5rem;
-}
-
 .senha-esquecida {
     margin-right: 55%;
     font-size: 1rem;
+}
+
+li.habito {
+    width: 90%;
+}
+
+form.habito {
+    border-radius: 10px;
+    border: 1px solid black;
 }
