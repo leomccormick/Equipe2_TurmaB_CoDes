@@ -259,3 +259,21 @@ form.habito {
     text-align: center;
     border: 2px solid black
 }
+
+.dias-geral {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.dias {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0; 
+    border-radius: 5px;
+    width: 200px; 
+    text-align: center; 
+}
