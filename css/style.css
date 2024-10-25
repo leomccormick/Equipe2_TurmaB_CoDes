@@ -209,5 +209,20 @@ input.botao-mais {
 }
 
 .espalhar {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.form-control{
+    margin-top: 1.5rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+input{
+    font-size: 1.5rem;
 }
