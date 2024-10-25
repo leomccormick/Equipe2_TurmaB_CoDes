@@ -227,6 +227,7 @@ input.botao-mais {
 
 .form-control{
     margin-top: 1.5rem;
+    border-radius: 15px;
 }
 
 input::placeholder {
