@@ -1,6 +1,6 @@
 /* Elementos principais */
 main {
-    max-height: calc(100vh - 4rem);
+    height: calc(100vh - 4rem);
     overflow-y: auto;
     padding-bottom: 1rem;
     box-sizing: border-box;
@@ -137,6 +137,7 @@ a.azul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .itens {
