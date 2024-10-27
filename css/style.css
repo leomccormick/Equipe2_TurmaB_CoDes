@@ -6,6 +6,12 @@ main {
     box-sizing: border-box;
 }
 
+main.sem-footer {
+    height: 100vh;
+    padding-bottom: 0;
+    overflow-y: auto;
+}
+
 footer {
     display: flex;
     position: fixed;
@@ -32,6 +38,10 @@ h1 {
     justify-content: center;
     padding: 0.5rem;
     margin-top: 16px;
+}
+
+h1.smaller-h1 {
+    font-size: 2rem;
 }
 
 h1.texto-fixo {
@@ -79,6 +89,11 @@ input {
     font-size: 1.5rem;
 }
 
+input.concluir-novo-lembrete {
+    margin: 0.5rem 2rem 0 2rem;
+    border-radius: 20px;
+}
+
 input.input-habito {
     border: none;
 }
@@ -86,6 +101,24 @@ input.input-habito {
 input[type="submit"] {
     cursor: pointer;
     font-size: 1.5rem;
+}
+
+input[type="time"] {
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 200px;
+    margin: 1rem auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input[type="text"]::placeholder {
+    color: hsl(0, 0%, 40%);
 }
 
 input.botao-mais {
@@ -99,13 +132,40 @@ input.botao-mais {
 
 input::placeholder {
     font-size: 1.5rem;
-    padding: 1rem;
 }
 
 /* Botões e links */
 .botao-confirmar {
+    padding: 0.8rem 1rem;
+    min-width: 50px;
+    max-width: 35vw;
     border-radius: 15px;
-    margin-top: 1rem;
+    font-size: 1rem !important;
+}
+
+.search-field {
+    flex: 1;
+    min-width: 150px;
+    max-width: 70vw;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+}
+
+input.search-field::placeholder {
+    font-size: 1rem;
+}
+
+.search-top {
+    margin-bottom: 2rem;
+}
+
+.voltar-tela {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: hsl(195, 100%, 70%);
+    margin: 1rem;
 }
 
 .botao_quadrado {
@@ -121,14 +181,34 @@ input::placeholder {
     cursor: pointer;
 }
 
-
 a {
     color: black;
+}
+
+a.lembrete {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 100px;
+    margin: 0 auto;
 }
 
 a.azul {
     background-color: transparent;
     color: hsl(195, 100%, 70%);
+}
+
+a.botao-seu-diario {
+    background-color: hsl(195, 100%, 70%);
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Layout */
@@ -155,15 +235,6 @@ a.azul {
     align-items: center;
     margin: 0;
 }
-
-/*
-.elemento-centralizado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-*/
 
 .espalhadoh {
     display: flex;
@@ -197,8 +268,44 @@ a.azul {
     text-decoration: none;
 }
 
+h3.seu-habito {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+a.seu-habito {
+    background-color: hsl(195, 100%, 70%);
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.pontuacao {
+    max-width: 130px;
+    margin: 0 auto 1rem auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.experiencia {
+    padding: 0.5rem;
+    margin: 1rem;
+    margin-top: 0;
+    width: 100%;
+    min-height: 2rem;
+    resize: vertical;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+}
+
 /* Listas */
-.dias-geral {
+.days-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -207,13 +314,16 @@ a.azul {
     align-items: center;
 }
 
-.dias {
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    width: 200px;
+ul.days-list li {
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    width: 150px;
     text-align: center;
+}
+
+.selected-day {
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .linha-amigos {
@@ -238,7 +348,7 @@ a.azul {
 }
 
 .usuario-ranking::before {
-    content: counter(ranking) ". ";
+    content: counter(ranking) ") ";
 }
 
 /* Margens */
@@ -287,7 +397,7 @@ a.azul {
 }
 
 .cinza {
-    border: 1px solid;
+    border: 1px solid black;
     background-color: rgb(223, 223, 223);
 }
 
@@ -302,9 +412,26 @@ a.azul {
     height: 64px;
 }
 
+.img24 {
+    width: 24px;
+    height: 24px;
+    margin: 1rem;
+}
+
 .img128 {
     width: 128px;
     height: 128px;
+}
+
+.perfil-amigo {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+
+}
+
+img.perfil-amigo {
+    margin-top: 2rem;
 }
 
 .right-margin {
@@ -313,18 +440,17 @@ a.azul {
 }
 
 .senha-esquecida {
-    margin-right: 55%;
+    display: block;
+    width: 100%;
     font-size: 1rem;
+    text-align: left;
+    margin: -0.5rem 0 1rem 2rem;
+    text-decoration: none;
 }
+
 
 .novohabito2 {
     font-size: 3rem;
-}
-
-.htopbuscar {
-    align-self: flex-start;
-    justify-self: center;
-    margin-top: 3rem;
 }
 
 ul.habito-1 {
