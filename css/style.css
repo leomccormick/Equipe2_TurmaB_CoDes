@@ -74,11 +74,6 @@ form.elemento-centralizado {
     width: 100%;
 }
 
-form.habito {
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
 input {
     padding: 1rem;
     font-size: 1.5rem;
@@ -107,16 +102,25 @@ input::placeholder {
     padding: 1rem;
 }
 
-.form-control {
-    margin-top: 1.5rem;
-    border-radius: 15px;
-}
-
 /* Botões e links */
 .botao-confirmar {
-    border-radius: 5%;
-    margin-top: 0.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
 }
+
+.botao_quadrado {
+    margin: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
 
 a {
     color: black;
@@ -178,7 +182,7 @@ a.azul {
     align-items: center;
 }
 
-.seuperfil {
+.seu-perfil {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,13 +193,11 @@ a.azul {
     border-radius: 10px;
     text-align: center;
     border: 2px solid black;
+    background-color: hsl(195, 100%, 70%);
+    text-decoration: none;
 }
 
 /* Listas */
-li.habito {
-    width: 90%;
-}
-
 .dias-geral {
     list-style-type: none;
     padding: 0;
@@ -220,6 +222,23 @@ li.habito {
     align-items: center;
     gap: 10px;
     padding-left: 1rem;
+}
+
+:root {
+    counter-reset: ranking;
+}
+
+.usuario-ranking {
+    padding: 1.5rem;
+    counter-increment: ranking;
+}
+
+.usuario-ranking:nth-child(-n+3) {
+    font-weight: bold;
+}
+
+.usuario-ranking::before {
+    content: counter(ranking) ". ";
 }
 
 /* Margens */
@@ -263,6 +282,8 @@ li.habito {
 
 .icone-vermelho {
     filter: brightness(0) saturate(100%) invert(24%) sepia(96%) saturate(7481%) hue-rotate(-15deg) brightness(104%) contrast(103%);
+    height: 32px;
+    width: 32px;
 }
 
 .cinza {
@@ -271,7 +292,22 @@ li.habito {
 }
 
 /* Outros */
-.borderr {
+
+.half-screen {
+    width: 50%;
+}
+
+.img64 {
+    width: 64px;
+    height: 64px;
+}
+
+.img128 {
+    width: 128px;
+    height: 128px;
+}
+
+.right-margin {
     border-right: 0.2rem;
     border-style: solid;
 }
@@ -289,4 +325,46 @@ li.habito {
     align-self: flex-start;
     justify-self: center;
     margin-top: 3rem;
+}
+
+ul.habito-1 {
+    margin-top: 2rem;
+}
+
+ul.habito-1 li {
+    margin: 1rem;
+}
+
+.info-habito {
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem;
+}
+
+ul.habito {
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-habito {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.novo-habito {
+    border-radius: 10px;
+}
+
+p.horario-lembrete {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+p.selecionado {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
