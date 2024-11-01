@@ -26,7 +26,7 @@ footer ul {
     flex-direction: row;
     padding: 0.5rem 0.5rem 1rem 0.5rem;
     justify-content: space-between;
-    border-top: 3px solid black;
+    border-top: 0.1875rem solid black;
     width: 100%;
 }
 
@@ -37,7 +37,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 h1.smaller-h1 {
@@ -80,7 +80,7 @@ form {
 form.elemento-centralizado {
     flex-direction: column;
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 25rem;
     width: 100%;
 }
 
@@ -88,7 +88,7 @@ form.novo-lembrete {
     display: flex;
     flex-direction: column;
     align-items: center; /* centraliza os botões */
-    gap: 10px; /* adiciona um espaço entre os botões */
+    gap: 0.625rem; /* adiciona um espaço entre os botões */
 }
 
 
@@ -99,7 +99,7 @@ input {
 
 input.concluir-novo-lembrete {
     margin: 0.5rem 2rem 0 2rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 input.input-habito {
@@ -114,7 +114,7 @@ input[type="submit"] {
 input[type="time"] {
     border-radius: 0.625rem;
     padding: 1rem;
-    max-width: 200px;
+    max-width: 12.5rem;
     margin: 1rem auto;
 }
 
@@ -131,7 +131,7 @@ input[type="text"]::placeholder {
 
 input.botao-mais {
     font-size: 1.5rem;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border-radius: 0.625rem;
     position: fixed;
     bottom: 5rem;
@@ -144,26 +144,26 @@ input::placeholder {
 
 /* Botões e links */
 .finalizar-sessao {
-    border: 2px solid black;
+    border: 0.125rem solid black;
     padding: 0.2rem;
     border-radius: 0.625rem;
 }
 
 .botao-confirmar {
     padding: 0.8rem 1rem;
-    min-width: 50px;
+    min-width: 3.125rem;
     max-width: 35vw;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     font-size: 1rem !important;
 }
 
 .search-field {
     flex: 1;
-    min-width: 150px;
+    min-width: 9.375rem;
     max-width: 70vw;
     padding: 0.5rem;
     margin-right: 1rem;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 input.search-field::placeholder {
@@ -175,7 +175,7 @@ input.search-field::placeholder {
 }
 
 .voltar-tela {
-    border: 2px solid black;
+    border: 0.125rem solid black;
     padding: 0.5rem;
     border-radius: 0.625rem;
     background-color: hsl(214, 41%, 46%);
@@ -200,11 +200,11 @@ a {
 }
 
 a.lembrete {
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     border-radius: 0.625rem;
     padding: 0.5rem;
     margin: 1rem;
-    width: 100px;
+    width: 6.25rem;
     margin: 0 auto;
 }
 
@@ -215,9 +215,9 @@ a.azul {
 
 a.botao-seu-diario {
     background-color: hsl(214, 41%, 46%);
-    border: 2px solid black;
+    border: 0.125rem solid black;
     border-radius: 0.625rem;
-    width: 200px;
+    width: 12.5rem;
     padding: 0.5rem;
     margin: 0 auto;
     font-size: 2rem;
@@ -271,13 +271,13 @@ a.botao-seu-diario {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    margin: 20px auto;
+    width: 12.5rem;
+    height: 3.125rem;
+    margin: 1.25rem auto;
     font-size: 1.5rem;
     border-radius: 0.625rem;
     text-align: center;
-    border: 2px solid black;
+    border: 0.125rem solid black;
     background-color: hsl(214, 41%, 46%);
     text-decoration: none;
 }
@@ -290,14 +290,14 @@ h3.seu-habito {
 
 a.seu-habito {
     background-color: hsl(214, 41%, 46%);
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     margin: 1rem;
     padding: 1rem;
     border-radius: 0.625rem;
 }
 
 .pontuacao {
-    max-width: 130px;
+    max-width: 8.125rem;
     margin: 0 auto 1rem auto;
     padding: 0.5rem;
     border-radius: 0.625rem;
@@ -333,12 +333,12 @@ textarea::placeholder {
 ul.days-list li {
     padding: 0.2rem;
     margin: 0.5rem 0;
-    width: 150px;
+    width: 9.375rem;
     text-align: center;
 }
 
 .selected-day {
-    border: 2px solid black;
+    border: 0.125rem solid black;
     border-radius: 0.625rem;
 }
 
@@ -346,7 +346,7 @@ ul.days-list li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     padding-left: 1rem;
 }
 
@@ -378,7 +378,7 @@ ul.days-list li {
 
 .margin-cheia {
     width: 95%;
-    border-width: 2px;
+    border-width: 0.125rem;
 }
 
 .margintop {
@@ -411,7 +411,7 @@ ul.days-list li {
 }
 
 .cinza {
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     background-color: rgb(200, 200, 200);
 }
 
@@ -422,24 +422,24 @@ ul.days-list li {
 }
 
 .img64 {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 }
 
 .img32 {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .img24 {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin: 1rem;
 }
 
 .img128 {
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
 }
 
 .perfil-amigo {
@@ -487,7 +487,7 @@ ul.habito-1 li {
 
 ul.habito {
     border-radius: 0.625rem;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     display: flex;
     justify-content: space-between;
 }
@@ -509,7 +509,7 @@ p.horario-lembrete {
 }
 
 p.selecionado {
-    border: 2px solid black;
+    border: 0.125rem solid black;
     padding: 0.5rem;
     border-radius: 0.625rem;
 }
