@@ -20,20 +20,20 @@
 <body>
     <main>
         <h1>Lembretes atuais</h1>
-        <ul class="coluna center">
+        <ul class="coluna center" id="lista-lembretes">
             <li>
                 <p class="horario-lembrete">9:30</p>
             </li>
             <li>
-                <p class="horario-lembrete selecionado">10:30</p>
+                <p class="horario-lembrete">10:30</p>
             </li>
         </ul>
 
         <form class="novo-lembrete" action="novo_lembrete.html">
-            <input class="azul botao_quadrado" type="submit" value="+" formaction="tela_inicial.html">
+            <input class="azul botao_quadrado" type="submit" value="+" formaction="novo_lembrete.html">
             <input class="azul botao-confirmar" type="submit" value="Concluir" formaction="novos_habitos.html">
         </form>
-        
+
     </main>
 
 
@@ -46,6 +46,8 @@
             <li><a href="configuracao.html"><img src="imagens/settings.png" alt="Configurações"></a></li>
         </ul>
     </footer>
+
+    <script src="js/lembretes.js"></script>
 </body>
 
 </html>
